@@ -1,0 +1,122 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+button {
+  background-color: #FFF;
+  border: 2px #F1793A solid;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.social {
+  margin-left: 1vw;
+  font-size: 1.5em;
+}
+
+.right_align {
+  text-align: right;
+}
+
+.team_photo {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+}
+
+.center {
+  text-align: center;
+}
+
+.primary_background_color {
+  background-color: #F1793A;
+}
+
+.pad {
+  padding: 20px 0px 20px 0px;
+}
+
+.section {
+  padding: 20px 20px 20px 20px;
+  font-size: 1.3em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex_col {
+  flex-direction: column;
+}
+
+.sub_header {
+  font-size: 1.5em;
+}
+
+.section_text {
+  width: 60vw;
+  text-align: justify;
+  line-height: 2;
+}
+
+.header_width {
+  width: 20vw;
+}
+
+.insta_column {
+  width: 40vw;
+}
+
+#story_feed {
+  justify-content: space-evenly;
+}
+
+.header {
+  font-size: 1.8em;
+}
+
+.nav_header {
+  font-size: 2em;
+  margin-left: 5vw;
+}
+
+#nav_spacer {
+  margin-top: 120px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  justify-content: center;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav_main {
+  font-size: 3em;
+  margin-left: 3vw;
+}
+
+#footer_spacer {
+  margin-bottom: 80px;
+}
+
+#nav_headers {
+  margin-right: 5vw;
+}
