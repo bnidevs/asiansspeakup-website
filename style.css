@@ -1,17 +1,28 @@
 a {
   text-decoration: none;
-  color: #000;
 }
 
 body {
   font-family: 'Shippori Mincho B1', serif;
+  color: #113034;
 }
 
-button {
+.button {
   background-color: #FFF;
-  border: 2px #F1793A solid;
+  border: 2px #156066 solid;
   border-radius: 5px;
   padding: 5px 10px 5px 10px;
+  background-color: #3AA1AA;
+  color: white;
+}
+
+.nav_header_link {
+  color: #383C33;
+}
+
+.nav_main_link {
+  color: #000;
+  font-weight: bold;
 }
 
 .flex {
@@ -21,6 +32,7 @@ button {
 .social {
   margin-left: 1vw;
   font-size: 1.5em;
+  color: #383C33;
 }
 
 .right_align {
@@ -37,8 +49,12 @@ button {
   text-align: center;
 }
 
-.primary_background_color {
-  background-color: #F1793A;
+.navbar_color {
+  background-color: #FF944F;
+}
+
+.footer_color {
+  background-color: #FFC45C;
 }
 
 .pad {
@@ -84,7 +100,12 @@ button {
 
 .nav_header {
   font-size: 2em;
-  margin-left: 5vw;
+  height: 110px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 1vw 0px 1vw;
 }
 
 #nav_spacer {
@@ -111,6 +132,7 @@ button {
 #nav_main {
   font-size: 3em;
   margin-left: 3vw;
+  width: 40vw;
 }
 
 #footer_spacer {
@@ -118,5 +140,15 @@ button {
 }
 
 #nav_headers {
+  align-items: center;
   margin-right: 5vw;
+}
+
+#logo_div {
+  justify-content: center;
+  margin-bottom: -20px;
+}
+
+#email_link {
+  color: #383C33;
 }
