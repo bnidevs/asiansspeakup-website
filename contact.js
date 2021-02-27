@@ -85,6 +85,8 @@ var quotesubmitconfirm = document.getElementById("quoteSubmitConfirm");
 var validateQuote = (form) => {
 	quote = quotefield.value.trim();
 
+	var b = true;
+
 	if(quote.length <= 0){
 		fieldFlash(quotefield);
 		b = false;
