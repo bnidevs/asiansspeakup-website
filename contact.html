@@ -50,7 +50,7 @@
         <div class="sub_header">
           Submit Your Story
         </div><br>
-        <form action="submit" method="POST">
+        <form action="javascript:submitStory()" onsubmit="return validateStory(this)">
           <input type="text" name="name" placeholder="Name">
           <br>
           <br>
@@ -60,7 +60,19 @@
           <textarea name="story" rows="8" cols="40" placeholder="What's Your Story"></textarea>
           <br>
           <br>
-          <input class="button" type="submit" name="submit" value="Submit">
+          <input id="storySubmit" class="button" type="submit" name="submit" value="Submit">
+          <div id="storySubmitConfirm" class="invis">Submitted!</div>
+        </form>
+        <br><br>
+        <div class="sub_header">
+          Submit Your Quote
+        </div><br>
+        <form action="javascript:submitQuote()" onsubmit="return validateQuote(this)">
+          <textarea name="quote" rows="4" cols="40" placeholder="What's Your Quote"></textarea>
+          <br>
+          <br>
+          <input id="quoteSubmit" class="button" type="submit" name="submit" value="Submit">
+          <div id="quoteSubmitConfirm" class="invis">Submitted!</div>
         </form>
       </div>
     </div>
@@ -73,4 +85,6 @@
       <a class="social" href="https://www.instagram.com/asiansspeakup/"><i class="fa fa-instagram"></i></a>
     </div>
   </body>
+
+  <script src="contact.js"></script>
 </html>

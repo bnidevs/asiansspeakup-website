@@ -91,6 +91,7 @@ body {
 
 .insta_column {
   width: 40vw;
+  align-items: center;
 }
 
 #story_feed {
@@ -165,4 +166,12 @@ body {
 
 .position_font {
   font-size: 1.3em;
+}
+
+.invalid_input {
+  border: 2px red dashed;
+}
+
+.invis {
+  display: none;
 }
