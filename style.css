@@ -152,3 +152,11 @@ body {
 #email_link {
   color: #383C33;
 }
+
+.name_width {
+  width: 30vw;
+}
+
+.position_font {
+  font-size: 1.3em;
+}

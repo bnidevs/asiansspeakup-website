@@ -28,13 +28,13 @@ var insert_team = (data) => {
   for(var t = 0; t < table.length; t++){
   	var elem = '<div class="flex section pad"><div class="flex flex_col right_align"><img class="team_photo" src="' + 
   	table[t][0] + 
-  	'"></img><div class="header header_width">' + 
-  	table[t][1] + '<br>' + table[t][2] + 
-  	'</div><div class="sub_header">' + 
+  	'"></img></div><div class="flex flex_col"><div class="header name_width">' + 
+  	table[t][1] + ' ' + table[t][2] + 
+  	'</div><div class="position_font">' + 
   	table[t][3] + 
-  	'</div></div><p class="section_text">' +
+  	'</div><p class="section_text">' +
   	table[t][4] +
-  	'</p></div>';
+  	'</p></div></div>';
 
   	team.innerHTML += elem;
   }
