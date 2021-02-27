@@ -3,7 +3,7 @@ a {
 }
 
 body {
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #113034;
 }
 
@@ -14,6 +14,7 @@ body {
   padding: 5px 10px 5px 10px;
   background-color: #3AA1AA;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav_header_link {
@@ -73,7 +74,9 @@ body {
 }
 
 .sub_header {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .section_text {
@@ -96,6 +99,7 @@ body {
 
 .header {
   font-size: 1.8em;
+  font-weight: 600;
 }
 
 .nav_header {
@@ -127,12 +131,14 @@ body {
   width: 100vw;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Bebas Neue', cursive;
 }
 
 #nav_main {
-  font-size: 3em;
+  font-size: 4em;
   margin-left: 3vw;
   width: 40vw;
+  letter-spacing: .1rem;
 }
 
 #footer_spacer {
