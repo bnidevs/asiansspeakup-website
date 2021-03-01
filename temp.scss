@@ -24,6 +24,14 @@ a {
 	text-decoration: none;
 }
 
+.text_input {
+	@extend .body_font;
+	@extend .body_font_color;
+	padding: 5px;
+	border-radius: 5px;
+	border: 2px $button-border solid;
+}
+
 .link_color {
 	color: $link_color;
 }

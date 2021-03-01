@@ -1,6 +1,11 @@
 a {
    text-decoration: none;
 }
+ .text_input {
+   padding: 5px;
+   border-radius: 5px;
+   border: 2px #156066 solid;
+}
  .link_color {
    color: #0093a6;
 }
@@ -19,10 +24,10 @@ a {
  .right_align {
    text-align: right;
 }
- .body_font, body, .button {
+ .body_font, .text_input, body, .button {
    font-family: 'Montserrat', sans-serif;
 }
- .body_font_color, body {
+ .body_font_color, .text_input, body {
    color: #113034;
 }
  .button {
