@@ -20,17 +20,17 @@ var validateStory = (form) => {
 	var b = true;
 
 	if(name.length <= 0){
-		storyFlash(namefield);
+		fieldFlash(namefield);
 		b = false;
 	}
 
 	if(!validateEmail(email)){
-		storyFlash(emailfield);
+		fieldFlash(emailfield);
 		b = false;
 	}
 
 	if(story.length <= 0){
-		storyFlash(storyfield);
+		fieldFlash(storyfield);
 		b = false;
 	}
 
