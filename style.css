@@ -1,181 +1,142 @@
 a {
-  text-decoration: none;
+   text-decoration: none;
 }
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: #113034;
+ .link_color {
+   color: #0093a6;
 }
-
-.button {
-  background-color: #FFF;
-  border: 2px #156066 solid;
-  border-radius: 5px;
-  padding: 5px 10px 5px 10px;
-  background-color: #3AA1AA;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
+ .extra_wide_size, .insta_column, .name_width, #nav_main {
+   width: 40vw;
 }
-
-.nav_header_link {
-  color: #383C33;
+ .center {
+   text-align: center;
 }
-
-.nav_main_link {
-  color: #000;
-  font-weight: bold;
+ .divider {
+   width: 1vw;
 }
-
-.flex {
-  display: flex;
+ .pad, .bar_position, #navbar, #footer {
+   padding: 20px 0;
 }
-
-.social {
-  margin-left: 1vw;
-  font-size: 2.5em;
-  color: #383C33;
+ .right_align {
+   text-align: right;
 }
-
-.right_align {
-  text-align: right;
+ .body_font, body, .button {
+   font-family: 'Montserrat', sans-serif;
 }
-
-.team_photo {
-  width: 20vw;
-  height: 20vw;
-  border-radius: 50%;
+ .body_font_color, body {
+   color: #113034;
 }
-
-.center {
-  text-align: center;
+ .button {
+   background-color: #3aa1aa;
+   border: 2px #156066 solid;
+   border-radius: 5px;
+   color: white;
+   padding: 5px 10px 5px 10px;
 }
-
-.navbar_color {
-  background-color: #FF944F;
+ .nav_font_color, .social {
+   color: #383c33;
 }
-
-.footer_color {
-  background-color: #FFC45C;
+ .nav_font, .nav_main_link, #navbar {
+   font-family: 'Bebas Neue', cursive;
 }
-
-.pad {
-  padding: 20px 0px 20px 0px;
+ .nav_main_link {
+   font-weight: bold;
+   color: black;
 }
-
-.section {
-  padding: 20px 20px 20px 20px;
-  font-size: 1.3em;
-  justify-content: space-evenly;
-  align-items: center;
+ .nav_header {
+   font-size: 2em;
+   height: 100%;
+   margin: -20px 0;
+   justify-content: center;
+   padding: 0 1vw;
 }
-
-.flex_col {
-  flex-direction: column;
+ .nav_header_link {
+   color: #383c33;
 }
-
-.sub_header {
-  font-size: 1.2em;
-  font-weight: 500;
-  font-style: italic;
+ .navbar_background, #navbar {
+   background-color: #ff944f;
 }
-
-.section_text {
-  width: 60vw;
-  text-align: justify;
-  line-height: 2;
+ .footer_background, #footer {
+   background-color: #ffc45c;
 }
-
-.header_width {
-  width: 20vw;
+ .bar_position, #navbar, #footer {
+   position: fixed;
+   width: 100vw;
+   left: 0;
 }
-
-.insta_column {
-  width: 40vw;
-  align-items: center;
+ .flex {
+   display: flex;
 }
-
-#story_feed {
-  justify-content: space-evenly;
+ .flex_col {
+   flex-direction: column;
 }
-
-.header {
-  font-size: 1.8em;
-  font-weight: 600;
+ .col_center, .nav_header, .section, .insta_column, #navbar, #footer, #nav_headers {
+   align-items: center;
 }
-
-.nav_header {
-  font-size: 2em;
-  height: 110px;
-  margin-top: -20px;
-  margin-bottom: -20px;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 1vw 0px 1vw;
+ .flex_spc_even, .section, #story_feed {
+   justify-content: space-evenly;
 }
-
-#nav_spacer {
-  margin-top: 120px;
+ .social {
+   font-size: 2.5em;
 }
-
-#footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  justify-content: center;
+ .team_photo {
+   width: 20vw;
+   height: 20vw;
+   border-radius: 50%;
 }
-
-#navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  align-items: center;
-  justify-content: space-between;
-  font-family: 'Bebas Neue', cursive;
+ .section {
+   padding: 20px;
+   font-size: 1.3em;
 }
-
-#nav_main {
-  font-size: 4em;
-  margin-left: 3vw;
-  width: 40vw;
-  letter-spacing: .1rem;
+ .sub_header {
+   font-size: 1.2em;
+   font-weight: 500;
+   font-style: italic;
 }
-
-#footer_spacer {
-  margin-bottom: 98px;
+ .section_text {
+   width: 60vw;
+   text-align: justify;
+   line-height: 2;
 }
-
-#nav_headers {
-  align-items: center;
-  margin-right: 5vw;
+ .header {
+   font-size: 1.8em;
+   font-weight: 600;
 }
-
-#logo_div {
-  justify-content: center;
-  margin-bottom: -20px;
+ .header_width {
+   width: 20vw;
 }
-
-#email_link {
-  color: #0093A6;
+ .invis {
+   display: none;
 }
-
-.name_width {
-  width: 30vw;
+ .invalid_input {
+   border: 2px red dashed;
 }
-
-.position_font {
-  font-size: 1.3em;
+ .position_font {
+   font-size: 1.3em;
 }
-
-.invalid_input {
-  border: 2px red dashed;
+ #nav_spacer {
+   margin-top: 120px;
 }
-
-.invis {
-  display: none;
+ #navbar {
+   top: 0;
+   justify-content: space-between;
 }
-
-.contact_social {
-  color: #0093A6;
+ #footer {
+   bottom: 0;
+   justify-content: center;
 }
+ #nav_main {
+   font-size: 4em;
+   margin-left: 3vw;
+   letter-spacing: 0.1rem;
+}
+ #footer_spacer {
+   margin-bottom: 98px;
+}
+ #nav_headers {
+   margin-right: 5vw;
+}
+ #logo_div {
+   justify-content: center;
+   padding-bottom: 0;
+}
+ 

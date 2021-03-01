@@ -1,0 +1,235 @@
+$body-font: 'Montserrat', sans-serif;
+$nav-font: 'Bebas Neue', cursive;
+
+$nav-font-color: #383C33;
+$body-font-color: #113034;
+$link_color: #0093A6;
+
+$nav-background: #FF944F;
+$footer-background: #FFC45C;
+
+$button-background: #3AA1AA;
+$button-border: #156066;
+$button-font-color: white;
+
+$extra-wide: 40vw;
+
+$social-size: 2.5em;
+
+$left-sect-width: 20vw;
+
+$regular-font-size: 1.3em;
+
+a {
+	text-decoration: none;
+}
+
+.link_color {
+	color: $link_color;
+}
+
+.extra_wide_size {
+	width: $extra-wide;
+}
+
+.center {
+	text-align: center;
+}
+
+.divider {
+	width: 1vw;
+}
+
+.pad {
+	padding: 20px 0;
+}
+
+.right_align {
+	text-align: right;
+}
+
+.body_font {
+	font-family: $body-font;
+}
+
+.body_font_color {
+	color: $body-font-color;
+}
+
+body {
+	@extend .body_font;
+	@extend .body_font_color;
+}
+
+.button {
+	@extend .body_font;
+	background-color: $button-background;
+	border: 2px $button-border solid;
+	border-radius: 5px;
+	color: $button-font-color;
+	padding: 5px 10px 5px 10px;
+}
+
+.nav_font_color {
+	color: $nav-font-color;
+}
+
+.nav_font {
+	font-family: $nav-font;
+}
+
+.nav_main_link {
+	@extend .nav_font;
+	font-weight: bold;
+	color: black;
+}
+
+.nav_header {
+	@extend .col_center;
+	font-size: 2em;
+	height: 100%;
+	margin: -20px 0;
+	justify-content: center;
+	padding: 0 1vw;
+}
+
+.nav_header_link {
+	color: $nav-font-color;
+}
+
+.navbar_background {
+	background-color: $nav-background;
+}
+
+.footer_background {
+	background-color: $footer-background;
+}
+
+.bar_position {
+	@extend .pad;
+	position: fixed;
+	width: 100vw;
+	left: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex_col {
+	flex-direction: column;
+}
+
+.col_center {
+	align-items: center;
+}
+
+.flex_spc_even {
+	justify-content: space-evenly;
+}
+
+.social {
+	@extend .nav_font_color;
+	font-size: $social-size;
+}
+
+.team_photo {
+	width: $left-sect-width;
+	height: $left-sect-width;
+	border-radius: 50%;
+}
+
+.section {
+	@extend .flex_spc_even;
+	@extend .col_center;
+	padding: 20px;
+	font-size: $regular-font-size;
+}
+
+.sub_header {
+	font-size: 1.2em;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.section_text {
+	width: 60vw;
+	text-align: justify;
+	line-height: 2;
+}
+
+.header {
+	font-size: 1.8em;
+	font-weight: 600;
+}
+
+.header_width {
+	width: $left-sect-width;
+}
+
+.insta_column {
+	@extend .extra_wide_size;
+	@extend .col_center;
+}
+
+.invis {
+	display: none;
+}
+
+.invalid_input {
+	border: 2px red dashed;
+}
+
+.name_width {
+	@extend .extra_wide_size;
+}
+
+.position_font {
+	font-size: $regular-font-size;
+}
+
+#story_feed {
+	@extend .flex_spc_even;
+}
+
+#nav_spacer {
+	margin-top: 120px;
+}
+
+#navbar {
+	@extend .col_center;
+	@extend .nav_font;
+	@extend .bar_position;
+	@extend .navbar_background;
+	top: 0;
+	justify-content: space-between;
+}
+
+#footer {
+	@extend .col_center;
+	@extend .bar_position;
+	@extend .footer_background;
+	bottom: 0;
+	justify-content: center;
+}
+
+#nav_main {
+	@extend .extra_wide_size;
+	font-size: 4em;
+	margin-left: 3vw;
+	letter-spacing: .1rem;
+}
+
+#footer_spacer {
+	margin-bottom: 98px;
+}
+
+#nav_headers {
+	@extend .col_center;
+	margin-right: 5vw;
+}
+
+#logo_div {
+	justify-content: center;
+	padding-bottom: 0;
+}
