@@ -148,4 +148,13 @@ a {
    justify-content: center;
    padding-bottom: 0;
 }
- 
+ #newslmodal {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: white;
+   z-index: 1;
+   box-shadow: 0 0 0 100vmax rgba(150,150,150,0.5);
+   border-radius: 5px;
+}

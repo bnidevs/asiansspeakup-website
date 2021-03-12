@@ -86,5 +86,24 @@
     </div>
   </body>
 
+  <div id="newslmodal" class="invis">
+    <div class="flex flex_col section pad">
+      <div class="sub_header">
+        Sign Up for our Newsletter
+      </div>
+      <div class="pad">
+        <form action="javascript:submitNewsl()" onsubmit="return validateNewsl(this)">
+          <input class="text_input" type="text" name="newslemail" placeholder="Email">
+          <br>
+          <br>
+          <input id="newslSubmit" class="button" type="submit" name="submit" value="Submit">
+          <div id="newslSubmitConfirm" class="invis">Submitted!</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <script src="https://kit.fontawesome.com/4f1c21e906.js" crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
 </html>
