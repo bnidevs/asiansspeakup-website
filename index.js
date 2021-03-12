@@ -3,9 +3,15 @@ window.onload = () => {
 }
 
 var displayNewslSignup = () => {
+	var cookie = document.cookie.split("; ").find(row => row.startsWith("nomodal="));
+
+	if(cookie != null){
+		return;
+	}
 	document.getElementById("newslmodal").classList.remove("invis");
 	document.body.addEventListener("click", function(){
 		document.getElementById("newslmodal").classList.add("invis");
+		document.cookie = "nomodal=true";
 	});
 }
 
