@@ -160,7 +160,8 @@ a {
 }
 
 .quotes_text {
-   font-size: 30px;
+   font-size: 40px;
+   line-height: 50px;
 }
 .quotes_quotes{
    font-size: 15px;
