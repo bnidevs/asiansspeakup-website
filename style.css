@@ -9,7 +9,7 @@ a {
  .link_color {
    color: #0093a6;
 }
- .extra_wide_size, .insta_column, .name_width, #nav_main {
+ .extra_wide_size, .insta_column, .name_width, #nav_main, .quotes_column {
    width: 40vw;
 }
  .center {
@@ -81,7 +81,7 @@ a {
  .col_center, .nav_header, .section, .insta_column, #navbar, #footer, #nav_headers {
    align-items: center;
 }
- .flex_spc_even, .section, #story_feed {
+ .flex_spc_even, .section, #story_feed, #quotes_feed {
    justify-content: space-evenly;
 }
  .social {
