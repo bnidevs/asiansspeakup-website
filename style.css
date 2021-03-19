@@ -159,18 +159,19 @@ a {
    border-radius: 5px;
 }
 
-.quotes_text {
-   font-size: 40px;
-   line-height: 50px;
+.quotes_adj{
+   width: 40vw;
 }
 .quotes_quotes{
-   font-size: 15px;
+   font-size: 10px;
    vertical-align: top;
+   margin-top: 5px;
 }
 .left_quote{
-   margin-right: 10px;
+   margin-right: 7px;
 }
 .right_quote{
-   margin-left: 10px;
+   margin-left: 7px;
 }
+
 

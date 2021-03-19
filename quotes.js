@@ -1,6 +1,6 @@
 var insert_quotes = (data) => {
   var quotes_feed = document.getElementById("quotes_feed").children;
-  var quotes_formatting = `<p class="quotes_text"><i class="fas fa-quote-left quotes_quotes left_quote"></i>EMBEDDED_TEXT<i class="fas fa-quote-right quotes_quotes right_quote"></i></p>`;
+  var quotes_formatting = `<p class="section_text quotes_adj"><i class="fas fa-quote-left quotes_quotes left_quote"></i>EMBEDDED_TEXT<i class="fas fa-quote-right quotes_quotes right_quote"></i></p>`;
 
   for(var t = 0; t < data.length; t++){
     var embed = data[t]["content"]["$t"];
