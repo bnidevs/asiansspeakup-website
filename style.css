@@ -158,3 +158,18 @@ a {
    box-shadow: 0 0 0 100vmax rgba(150,150,150,0.5);
    border-radius: 5px;
 }
+
+.quotes_text {
+   font-size: 25px;
+}
+.quotes_quotes{
+   font-size: 15px;
+   vertical-align: top;
+}
+.left_quote{
+   margin-right: 10px;
+}
+.right_quote{
+   margin-left: 10px;
+}
+
