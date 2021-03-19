@@ -161,17 +161,18 @@ a {
 
 .quotes_adj{
    width: 40vw;
+   font-size: 1.1vmax;
 }
 .quotes_quotes{
-   font-size: 10px;
+   font-size: 0.7vmax;
    vertical-align: top;
-   margin-top: 5px;
+   margin-top: 0.4vmax;
 }
 .left_quote{
-   margin-right: 7px;
+   margin-right: 0.3vmax;
 }
 .right_quote{
-   margin-left: 7px;
+   margin-left: 0.3vmax;
 }
 
 
