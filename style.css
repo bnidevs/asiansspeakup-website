@@ -9,7 +9,7 @@ a {
  .link_color {
    color: #0093a6;
 }
- .extra_wide_size, .insta_column, .name_width, #nav_main {
+ .extra_wide_size, .insta_column, .name_width, #nav_main, .quotes_column {
    width: 40vw;
 }
  .center {
@@ -81,7 +81,7 @@ a {
  .col_center, .nav_header, .section, .insta_column, #navbar, #footer, #nav_headers {
    align-items: center;
 }
- .flex_spc_even, .section, #story_feed {
+ .flex_spc_even, .section, #story_feed, #quotes_feed {
    justify-content: space-evenly;
 }
  .social {
@@ -161,3 +161,21 @@ a {
    box-shadow: 0 0 0 100vmax rgba(150,150,150,0.5);
    border-radius: 5px;
 }
+
+.quotes_adj{
+   width: 40vw;
+   font-size: calc(0.9em + 0.3vmax);
+}
+.quotes_quotes{
+   font-size: calc(0.5em + 0.3vmax);
+   vertical-align: top;
+   margin-top: 0.4vmax;
+}
+.left_quote{
+   margin-right: 5px;
+}
+.right_quote{
+   margin-left: 5px;
+}
+
+
