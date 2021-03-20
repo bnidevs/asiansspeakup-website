@@ -148,6 +148,9 @@ a {
    justify-content: center;
    padding-bottom: 0;
 }
+ #logo_img {
+   width: 15vw;
+}
  #newslmodal {
    position: fixed;
    top: 50%;

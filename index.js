@@ -59,6 +59,8 @@ var submitNewslFlash = () => {
 	setTimeout(function(){
 		newslsubmitbutton.classList.remove("invis");
 		newslsubmitconfirm.classList.add("invis");
+		document.getElementById("newslmodal").classList.add("invis");
+		document.cookie = "nomodal=true";
 	}, 2000);
 }
 
