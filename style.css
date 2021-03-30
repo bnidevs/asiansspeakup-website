@@ -162,20 +162,22 @@ a {
    border-radius: 5px;
 }
 
-.quotes_adj{
+.quotes_adj {
    width: 40vw;
    font-size: calc(0.9em + 0.3vmax);
 }
-.quotes_quotes{
+.quotes_quotes {
    font-size: calc(0.5em + 0.3vmax);
    vertical-align: top;
    margin-top: 0.4vmax;
 }
-.left_quote{
+.left_quote {
    margin-right: 5px;
 }
-.right_quote{
+.right_quote {
    margin-left: 5px;
 }
-
+.linkinbio {
+   width: 90vw;
+}
 
