@@ -70,25 +70,25 @@ var displayNewslSignup = () => {
 		return;
 	}
 	document.getElementById("newslmodal").classList.remove("invis");
-	document.body.addEventListener("click", function(){
+	document.getElementById("main_content").addEventListener("click", function(){
 		document.getElementById("newslmodal").classList.add("invis");
 		document.cookie = "nomodal=true";
 	});
 }
 
-var newslemail;
+var newslemail1;
 
-var newslfield = document.getElementsByName("newslemail1")[0];
-var newslsubmitbutton = document.getElementById("newslSubmit1");
-var newslsubmitconfirm = document.getElementById("newslSubmitConfirm1");
+var newslfield1 = document.getElementsByName("newslemail1")[0];
+var newslsubmitbutton1 = document.getElementById("newslSubmit1");
+var newslsubmitconfirm1 = document.getElementById("newslSubmitConfirm1");
 
 var validateNewsl1 = (form) => {
-	newslemail = newslfield.value.trim();
+	newslemail1 = newslfield1.value.trim();
 
 	var b = true;
 
-	if(!validateEmail(newslemail)){
-		fieldFlash(quotefield);
+	if(!validateEmail(newslemail1)){
+		fieldFlash(newslfield1);
 		b = false;
 	}
 
@@ -97,7 +97,7 @@ var validateNewsl1 = (form) => {
 
 var submitNewsl1 = () => {
 	var inputs = {
-		'entry.203061781': newslemail
+		'entry.203061781': newslemail1
 	}
 
 	fetch("https://docs.google.com/forms/u/1/d/e/1FAIpQLSeCSmujd3rFInILj_SUpBwjgZcV-8VwpydHotgCTPha7nkRbA/formResponse", {
@@ -109,22 +109,22 @@ var submitNewsl1 = () => {
 		body: new URLSearchParams(inputs)
 	});
 
-	submitNewslFlash();
-	clearFieldsNewsl();
+	submitNewslFlash1();
+	clearFieldsNewsl1();
 }
 
 var submitNewslFlash1 = () => {
-	newslsubmitbutton.classList.add("invis");
-	newslsubmitconfirm.classList.remove("invis");
+	newslsubmitbutton1.classList.add("invis");
+	newslsubmitconfirm1.classList.remove("invis");
 
 	setTimeout(function(){
-		newslsubmitbutton.classList.remove("invis");
-		newslsubmitconfirm.classList.add("invis");
+		newslsubmitbutton1.classList.remove("invis");
+		newslsubmitconfirm1.classList.add("invis");
 		document.getElementById("newslmodal").classList.add("invis");
 		document.cookie = "nomodal=true";
 	}, 2000);
 }
 
 var clearFieldsNewsl1 = () => {
-	newslfield.value = "";
+	newslfield1.value = "";
 }

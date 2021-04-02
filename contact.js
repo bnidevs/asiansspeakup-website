@@ -1,4 +1,4 @@
-var name, email, story, quote, newslemail;
+var name, email, story, quote, newslemail2;
 
 var namefield = document.getElementsByName("name")[0];
 var emailfield = document.getElementsByName("email")[0];
@@ -127,17 +127,17 @@ var clearFieldsQuote = () => {
 	quotefield.value = "";
 }
 
-var newslfield = document.getElementsByName("newslemail2")[0];
-var newslsubmitbutton = document.getElementById("newslSubmit2");
-var newslsubmitconfirm = document.getElementById("newslSubmitConfirm2");
+var newslfield2 = document.getElementsByName("newslemail2")[0];
+var newslsubmitbutton2 = document.getElementById("newslSubmit2");
+var newslsubmitconfirm2 = document.getElementById("newslSubmitConfirm2");
 
 var validateNewsl2 = (form) => {
-	newslemail = newslfield.value.trim();
+	newslemail2 = newslfield2.value.trim();
 
 	var b = true;
 
-	if(!validateEmail(newslemail)){
-		fieldFlash(quotefield);
+	if(!validateEmail(newslemail2)){
+		fieldFlash(newslfield2);
 		b = false;
 	}
 
@@ -146,7 +146,7 @@ var validateNewsl2 = (form) => {
 
 var submitNewsl2 = () => {
 	var inputs = {
-		'entry.203061781': newslemail
+		'entry.203061781': newslemail2
 	}
 
 	fetch("https://docs.google.com/forms/u/1/d/e/1FAIpQLSeCSmujd3rFInILj_SUpBwjgZcV-8VwpydHotgCTPha7nkRbA/formResponse", {
@@ -158,20 +158,20 @@ var submitNewsl2 = () => {
 		body: new URLSearchParams(inputs)
 	});
 
-	submitNewslFlash();
-	clearFieldsNewsl();
+	submitNewslFlash2();
+	clearFieldsNewsl2();
 }
 
 var submitNewslFlash2 = () => {
-	newslsubmitbutton.classList.add("invis");
-	newslsubmitconfirm.classList.remove("invis");
+	newslsubmitbutton2.classList.add("invis");
+	newslsubmitconfirm2.classList.remove("invis");
 
 	setTimeout(function(){
-		newslsubmitbutton.classList.remove("invis");
-		newslsubmitconfirm.classList.add("invis");
+		newslsubmitbutton2.classList.remove("invis");
+		newslsubmitconfirm2.classList.add("invis");
 	}, 2000);
 }
 
 var clearFieldsNewsl2 = () => {
-	newslfield.value = "";
+	newslfield2.value = "";
 }
