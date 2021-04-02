@@ -2,6 +2,67 @@ window.onload = () => {
 	setTimeout(displayNewslSignup, 1000);
 }
 
+var open_categ = "main";
+
+$(document).ready(function(){
+
+	$("#stories_link").click(function(){
+		if(open_categ !== "stories"){
+			$(".content_section:visible").fadeOut().promise().done(function(){
+				$("#stories_content").fadeIn();
+			});
+			open_categ = "stories";
+		}
+	});
+
+	$("#quotes_link").click(function(){
+		if(open_categ !== "quotes"){
+			$(".content_section:visible").fadeOut().promise().done(function(){
+				$("#quotes_content").fadeIn();
+			});
+			open_categ = "quotes";
+		}
+	});
+
+	$("#team_link").click(function(){
+		if(open_categ !== "team"){
+			$(".content_section:visible").fadeOut().promise().done(function(){
+				$("#team_content").fadeIn();
+			});
+			open_categ = "team";
+		}
+	});
+
+	$("#events_link").click(function(){
+		if(open_categ !== "events"){
+			$(".content_section:visible").fadeOut().promise().done(function(){
+				$("#events_content").fadeIn();
+			});
+			open_categ = "events";
+		}
+	});
+
+	$("#contact_link").click(function(){
+		if(open_categ !== "contact"){
+			$(".content_section:visible").fadeOut().promise().done(function(){
+				$("#contact_content").fadeIn();
+			});
+			open_categ = "contact";
+		}
+	});
+
+	$("#main_link").click(function(){
+		if(open_categ !== "main"){
+			$(".content_section:visible").fadeOut().promise().done(function(){
+				$("#index_content").fadeIn();
+			});
+			open_categ = "main";
+		}
+	});
+});
+
+
+
 var displayNewslSignup = () => {
 	var cookie = document.cookie.split("; ").find(row => row.startsWith("nomodal="));
 
@@ -17,11 +78,11 @@ var displayNewslSignup = () => {
 
 var newslemail;
 
-var newslfield = document.getElementsByName("newslemail")[0];
-var newslsubmitbutton = document.getElementById("newslSubmit");
-var newslsubmitconfirm = document.getElementById("newslSubmitConfirm");
+var newslfield = document.getElementsByName("newslemail1")[0];
+var newslsubmitbutton = document.getElementById("newslSubmit1");
+var newslsubmitconfirm = document.getElementById("newslSubmitConfirm1");
 
-var validateNewsl = (form) => {
+var validateNewsl1 = (form) => {
 	newslemail = newslfield.value.trim();
 
 	var b = true;
@@ -34,7 +95,7 @@ var validateNewsl = (form) => {
 	return b;
 }
 
-var submitNewsl = () => {
+var submitNewsl1 = () => {
 	var inputs = {
 		'entry.203061781': newslemail
 	}
@@ -52,7 +113,7 @@ var submitNewsl = () => {
 	clearFieldsNewsl();
 }
 
-var submitNewslFlash = () => {
+var submitNewslFlash1 = () => {
 	newslsubmitbutton.classList.add("invis");
 	newslsubmitconfirm.classList.remove("invis");
 
@@ -64,6 +125,6 @@ var submitNewslFlash = () => {
 	}, 2000);
 }
 
-var clearFieldsNewsl = () => {
+var clearFieldsNewsl1 = () => {
 	newslfield.value = "";
 }

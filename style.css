@@ -1,5 +1,6 @@
 a {
    text-decoration: none;
+   cursor: pointer;
 }
  .text_input {
    padding: 5px;
@@ -128,6 +129,7 @@ a {
  #navbar {
    top: 0;
    justify-content: space-between;
+   z-index: 10;
 }
  #footer {
    bottom: 0;
@@ -162,6 +164,10 @@ a {
    border-radius: 5px;
 }
 
+#team_content,#quotes_content,#events_content,#stories_content,#contact_content {
+  display: none;
+}
+
 .quotes_adj {
    width: 40vw;
    font-size: calc(0.9em + 0.3vmax);
@@ -180,4 +186,3 @@ a {
 .linkinbio {
    width: 90vw;
 }
-

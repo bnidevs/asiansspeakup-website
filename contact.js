@@ -127,11 +127,11 @@ var clearFieldsQuote = () => {
 	quotefield.value = "";
 }
 
-var newslfield = document.getElementsByName("newslemail")[0];
-var newslsubmitbutton = document.getElementById("newslSubmit");
-var newslsubmitconfirm = document.getElementById("newslSubmitConfirm");
+var newslfield = document.getElementsByName("newslemail2")[0];
+var newslsubmitbutton = document.getElementById("newslSubmit2");
+var newslsubmitconfirm = document.getElementById("newslSubmitConfirm2");
 
-var validateNewsl = (form) => {
+var validateNewsl2 = (form) => {
 	newslemail = newslfield.value.trim();
 
 	var b = true;
@@ -144,7 +144,7 @@ var validateNewsl = (form) => {
 	return b;
 }
 
-var submitNewsl = () => {
+var submitNewsl2 = () => {
 	var inputs = {
 		'entry.203061781': newslemail
 	}
@@ -162,7 +162,7 @@ var submitNewsl = () => {
 	clearFieldsNewsl();
 }
 
-var submitNewslFlash = () => {
+var submitNewslFlash2 = () => {
 	newslsubmitbutton.classList.add("invis");
 	newslsubmitconfirm.classList.remove("invis");
 
@@ -172,6 +172,6 @@ var submitNewslFlash = () => {
 	}, 2000);
 }
 
-var clearFieldsNewsl = () => {
+var clearFieldsNewsl2 = () => {
 	newslfield.value = "";
 }
