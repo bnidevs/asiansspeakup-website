@@ -1,5 +1,6 @@
 a {
    text-decoration: none;
+   cursor: pointer;
 }
  .text_input {
    padding: 5px;
@@ -128,6 +129,7 @@ a {
  #navbar {
    top: 0;
    justify-content: space-between;
+   z-index: 10;
 }
  #footer {
    bottom: 0;
@@ -157,25 +159,30 @@ a {
    left: 50%;
    transform: translate(-50%, -50%);
    background-color: white;
-   z-index: 1;
+   z-index: 20;
    box-shadow: 0 0 0 100vmax rgba(150,150,150,0.5);
    border-radius: 5px;
 }
 
-.quotes_adj{
+#team_content,#quotes_content,#events_content,#stories_content,#contact_content {
+  display: none;
+}
+
+.quotes_adj {
    width: 40vw;
    font-size: calc(0.9em + 0.3vmax);
 }
-.quotes_quotes{
+.quotes_quotes {
    font-size: calc(0.5em + 0.3vmax);
    vertical-align: top;
    margin-top: 0.4vmax;
 }
-.left_quote{
+.left_quote {
    margin-right: 5px;
 }
-.right_quote{
+.right_quote {
    margin-left: 5px;
 }
-
-
+.linkinbio {
+   width: 90vw;
+}

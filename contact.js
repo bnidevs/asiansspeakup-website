@@ -1,4 +1,4 @@
-var name, email, story, quote, newslemail;
+var name, email, story, quote, newslemail2;
 
 var namefield = document.getElementsByName("name")[0];
 var emailfield = document.getElementsByName("email")[0];
@@ -127,26 +127,26 @@ var clearFieldsQuote = () => {
 	quotefield.value = "";
 }
 
-var newslfield = document.getElementsByName("newslemail")[0];
-var newslsubmitbutton = document.getElementById("newslSubmit");
-var newslsubmitconfirm = document.getElementById("newslSubmitConfirm");
+var newslfield2 = document.getElementsByName("newslemail2")[0];
+var newslsubmitbutton2 = document.getElementById("newslSubmit2");
+var newslsubmitconfirm2 = document.getElementById("newslSubmitConfirm2");
 
-var validateNewsl = (form) => {
-	newslemail = newslfield.value.trim();
+var validateNewsl2 = (form) => {
+	newslemail2 = newslfield2.value.trim();
 
 	var b = true;
 
-	if(!validateEmail(newslemail)){
-		fieldFlash(quotefield);
+	if(!validateEmail(newslemail2)){
+		fieldFlash(newslfield2);
 		b = false;
 	}
 
 	return b;
 }
 
-var submitNewsl = () => {
+var submitNewsl2 = () => {
 	var inputs = {
-		'entry.203061781': newslemail
+		'entry.203061781': newslemail2
 	}
 
 	fetch("https://docs.google.com/forms/u/1/d/e/1FAIpQLSeCSmujd3rFInILj_SUpBwjgZcV-8VwpydHotgCTPha7nkRbA/formResponse", {
@@ -158,20 +158,20 @@ var submitNewsl = () => {
 		body: new URLSearchParams(inputs)
 	});
 
-	submitNewslFlash();
-	clearFieldsNewsl();
+	submitNewslFlash2();
+	clearFieldsNewsl2();
 }
 
-var submitNewslFlash = () => {
-	newslsubmitbutton.classList.add("invis");
-	newslsubmitconfirm.classList.remove("invis");
+var submitNewslFlash2 = () => {
+	newslsubmitbutton2.classList.add("invis");
+	newslsubmitconfirm2.classList.remove("invis");
 
 	setTimeout(function(){
-		newslsubmitbutton.classList.remove("invis");
-		newslsubmitconfirm.classList.add("invis");
+		newslsubmitbutton2.classList.remove("invis");
+		newslsubmitconfirm2.classList.add("invis");
 	}, 2000);
 }
 
-var clearFieldsNewsl = () => {
-	newslfield.value = "";
+var clearFieldsNewsl2 = () => {
+	newslfield2.value = "";
 }
