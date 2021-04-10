@@ -51,6 +51,15 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#sharestorybutton").click(function(){
+		if(open_categ !== "contact"){
+			$(".content_section:visible").fadeOut().promise().done(function(){
+				$("#contact_content").fadeIn();
+			});
+			open_categ = "contact";
+		}
+	});
+
 	$("#main_link").click(function(){
 		if(open_categ !== "main"){
 			$(".content_section:visible").fadeOut().promise().done(function(){
