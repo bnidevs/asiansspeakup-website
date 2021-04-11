@@ -10,7 +10,7 @@ a {
  .link_color {
    color: #0093a6;
 }
- .extra_wide_size, .insta_column, .name_width, #nav_main, .quotes_column {
+ .extra_wide_size, .insta_column, .name_width, #nav_main, .quotes_column, #linkinbio_nav_main {
    width: 40vw;
 }
  .center {
@@ -19,7 +19,7 @@ a {
  .divider {
    width: 1vw;
 }
- .pad, .bar_position, #navbar, #footer {
+ .pad, .bar_position, #navbar, #footer, #linkinbionavbar {
    padding: 20px 0;
 }
  .right_align {
@@ -62,13 +62,13 @@ a {
  .nav_header_link {
    color: #383c33;
 }
- .navbar_background, #navbar, #nav_main {
+ .navbar_background, #navbar, #nav_main, #linkinbionavbar, #linkinbio_nav_main {
    background-color: #ff944f;
 }
  .footer_background, #footer {
    background-color: #ffc45c;
 }
- .bar_position, #navbar, #footer {
+ .bar_position, #navbar, #footer, #linkinbionavbar {
    position: fixed;
    width: 100vw;
    left: 0;
@@ -79,7 +79,7 @@ a {
  .flex_col {
    flex-direction: column;
 }
- .col_center, .nav_header, .section, .insta_column, #navbar, #footer, #nav_headers {
+ .col_center, .nav_header, .section, .insta_column, #navbar, #footer, #nav_headers, #linkinbionavbar {
    align-items: center;
 }
  .flex_spc_even, .section, #story_feed, #quotes_feed {
@@ -132,6 +132,12 @@ a {
    z-index: 10;
    height: 120px;
 }
+ #linkinbionavbar {
+   top: 0;
+   justify-content: center;
+   z-index: 10;
+   height: 120px;
+}
  #footer {
    bottom: 0;
    justify-content: center;
@@ -139,6 +145,15 @@ a {
  #nav_main {
    font-size: 4em;
    margin-left: 9vw;
+   letter-spacing: 0.1rem;
+   margin-top: 7vw;
+   padding: 5px;
+   width: 15vw;
+   height: 15vw;
+   border-radius: 50%;
+}
+ #linkinbio_nav_main {
+   font-size: 4em;
    letter-spacing: 0.1rem;
    margin-top: 7vw;
    padding: 5px;
