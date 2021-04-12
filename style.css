@@ -146,10 +146,10 @@ a {
    font-size: 4em;
    margin-left: 9vw;
    letter-spacing: 0.1rem;
-   margin-top: 7vw;
+   margin-top: 7vmin;
    padding: 5px;
-   width: 15vw;
-   height: 15vw;
+   width: 15vmin;
+   height: 15vmin;
    border-radius: 50%;
 }
  #linkinbio_nav_main {
@@ -172,7 +172,7 @@ a {
    padding-bottom: 0;
 }
  #logo_img {
-   width: 15vw;
+   width: 15vmin;
 }
  #newslmodal {
    position: fixed;
