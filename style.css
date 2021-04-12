@@ -155,10 +155,10 @@ a {
  #linkinbio_nav_main {
    font-size: 4em;
    letter-spacing: 0.1rem;
-   margin-top: 7vw;
+   margin-top: 7vmin;
    padding: 5px;
-   width: 15vw;
-   height: 15vw;
+   width: 15vmin;
+   height: 15vmin;
    border-radius: 50%;
 }
  #footer_spacer {
@@ -189,6 +189,10 @@ a {
   display: none;
 }
 
+#linkinbio_links {
+  width: 90vw;
+}
+
 .quotes_adj {
    width: 40vw;
    font-size: calc(0.9em + 0.3vmax);
@@ -206,4 +210,7 @@ a {
 }
 .linkinbio {
    width: 90vw;
+   margin-top: 1.5vh;
+   font-size: 1.2em;
+   align-self: center;
 }
