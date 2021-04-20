@@ -79,7 +79,7 @@ var displayNewslSignup = () => {
 		return;
 	}
 	document.getElementById("newslmodal").classList.remove("invis");
-	document.getElementById("main_content").addEventListener("click", function(){
+	document.body.addEventListener("click", function(){
 		document.getElementById("newslmodal").classList.add("invis");
 		document.cookie = "nomodal=true";
 	});
