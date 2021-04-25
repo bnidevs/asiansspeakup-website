@@ -10,7 +10,7 @@ a {
  .link_color {
    color: #0093a6;
 }
- .extra_wide_size, .insta_column, .name_width, #nav_main, .quotes_column {
+ .extra_wide_size, .insta_column, .name_width, #nav_main, .quotes_column, #linkinbio_nav_main {
    width: 40vw;
 }
  .center {
@@ -19,7 +19,7 @@ a {
  .divider {
    width: 1vw;
 }
- .pad, .bar_position, #navbar, #footer {
+ .pad, .bar_position, #navbar, #footer, #linkinbionavbar {
    padding: 20px 0;
 }
  .right_align {
@@ -62,13 +62,13 @@ a {
  .nav_header_link {
    color: #383c33;
 }
- .navbar_background, #navbar {
+ .navbar_background, #navbar, #nav_main, #linkinbionavbar, #linkinbio_nav_main {
    background-color: #ff944f;
 }
  .footer_background, #footer {
    background-color: #ffc45c;
 }
- .bar_position, #navbar, #footer {
+ .bar_position, #navbar, #footer, #linkinbionavbar {
    position: fixed;
    width: 100vw;
    left: 0;
@@ -79,7 +79,7 @@ a {
  .flex_col {
    flex-direction: column;
 }
- .col_center, .nav_header, .section, .insta_column, #navbar, #footer, #nav_headers {
+ .col_center, .nav_header, .section, .insta_column, #navbar, #footer, #nav_headers, #linkinbionavbar {
    align-items: center;
 }
  .flex_spc_even, .section, #story_feed, #quotes_feed {
@@ -106,6 +106,7 @@ a {
    width: 60vw;
    text-align: justify;
    line-height: 2;
+   font-size: 1.5vmax;
 }
  .header {
    font-size: 1.8em;
@@ -124,12 +125,19 @@ a {
    font-size: 1.3em;
 }
  #nav_spacer {
-   margin-top: 120px;
+   margin-top: 200px;
 }
  #navbar {
    top: 0;
    justify-content: space-between;
    z-index: 10;
+   height: 120px;
+}
+ #linkinbionavbar {
+   top: 0;
+   justify-content: center;
+   z-index: 10;
+   height: 120px;
 }
  #footer {
    bottom: 0;
@@ -137,8 +145,22 @@ a {
 }
  #nav_main {
    font-size: 4em;
-   margin-left: 3vw;
+   margin-left: 9vw;
    letter-spacing: 0.1rem;
+   margin-top: 7vmin;
+   padding: 5px;
+   width: 15vmin;
+   height: 15vmin;
+   border-radius: 50%;
+}
+ #linkinbio_nav_main {
+   font-size: 4em;
+   letter-spacing: 0.1rem;
+   margin-top: 7vmin;
+   padding: 5px;
+   width: 15vmin;
+   height: 15vmin;
+   border-radius: 50%;
 }
  #footer_spacer {
    margin-bottom: 98px;
@@ -151,7 +173,7 @@ a {
    padding-bottom: 0;
 }
  #logo_img {
-   width: 15vw;
+   width: 15vmin;
 }
  #newslmodal {
    position: fixed;
@@ -166,6 +188,10 @@ a {
 
 #team_content,#quotes_content,#events_content,#stories_content,#contact_content {
   display: none;
+}
+
+#linkinbio_links {
+  width: 90vw;
 }
 
 .quotes_adj {
@@ -185,4 +211,7 @@ a {
 }
 .linkinbio {
    width: 90vw;
+   margin-top: 1.5vh;
+   font-size: 1.2em;
+   align-self: center;
 }

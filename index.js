@@ -51,6 +51,15 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#sharestorybutton").click(function(){
+		if(open_categ !== "contact"){
+			$(".content_section:visible").fadeOut().promise().done(function(){
+				$("#contact_content").fadeIn();
+			});
+			open_categ = "contact";
+		}
+	});
+
 	$("#main_link").click(function(){
 		if(open_categ !== "main"){
 			$(".content_section:visible").fadeOut().promise().done(function(){
@@ -70,7 +79,7 @@ var displayNewslSignup = () => {
 		return;
 	}
 	document.getElementById("newslmodal").classList.remove("invis");
-	document.getElementById("main_content").addEventListener("click", function(){
+	document.body.addEventListener("click", function(){
 		document.getElementById("newslmodal").classList.add("invis");
 		document.cookie = "nomodal=true";
 	});
