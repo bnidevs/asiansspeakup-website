@@ -215,3 +215,39 @@ a {
    font-size: 1.2em;
    align-self: center;
 }
+
+.stories_text{
+   text-align: justify;
+   line-height: 1.7;
+   font-size: 0.7vmax;
+}
+
+.stories_header {
+   line-height: 1.8 !important;
+
+   text-align:left;
+   line-height: 0;
+   font-size: 1.5vmax;
+}
+
+.stories_div {
+   width:40vw;
+   margin-bottom: 7vh;
+}
+.stories_img_p{
+   margin-right: 1vw;
+   margin-bottom: 1vw;
+   float: left;
+   margin-block-end: 0px;
+   margin-block-start: 0px;
+
+}
+.stories_img {
+   border-radius: 10px;
+   max-width:20vw; 
+   max-height:30vh; 
+}
+
+.stories_link{
+
+}
