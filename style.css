@@ -219,7 +219,7 @@ a {
 .stories_text{
    text-align: justify;
    line-height: 1.7;
-   font-size: 0.7vmax;
+   font-size: calc(1em + 0.4vmax);
 }
 
 .stories_header {
