@@ -125,19 +125,19 @@ a {
    font-size: 1.3em;
 }
  #nav_spacer {
-   margin-top: 200px;
+   margin-top: 12vh;
 }
  #navbar {
    top: 0;
    justify-content: space-between;
    z-index: 10;
-   height: 4vh;
+   height: 6vh;
 }
  #linkinbionavbar {
    top: 0;
    justify-content: center;
    z-index: 10;
-   height: 120px;
+   height: 6vh;
 }
  #footer {
    bottom: 0;
