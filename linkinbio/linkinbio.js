@@ -1,3 +1,10 @@
+var strip = (resp) => {
+  var qrystr = "Query.setResponse(";
+  var start = resp.indexOf(qrystr) + qrystr.length;
+
+  return resp.substring(start, resp.length - 2);
+}
+
 var insert_linkinbio = (data) => {
   var feed = document.getElementById("linkinbio_links");
 
