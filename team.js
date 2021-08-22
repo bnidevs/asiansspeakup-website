@@ -1,28 +1,26 @@
+var strip = (resp) => {
+  var qrystr = "Query.setResponse(";
+  var start = resp.indexOf(qrystr) + qrystr.length;
+
+  return resp.substring(start, resp.length - 2);
+}
+
 var insert_team = (data) => {
   var team = document.getElementById("team");
-
-  var incr = 0;
 
   var table = [];
 
   for(var t = 0; t < data.length; t++){
-    var info = data[t]["content"]["$t"];
-    var rownum = data[t]["gs$cell"]["row"];
+    var row = data[t];
 
-    if(rownum != incr){
-    	if(incr != 0 && table[incr - 1].length == 4){
-    		table[incr - 1].splice(0, 0, "");
-    	}
+    var content = row["c"];
 
-    	incr++;
-    	table.push([]);
+    var lst = [];
+    for(var k = 0; k < content.length; k++){
+      lst.push(content[k]['v']);
     }
 
-    table[incr - 1].push(info);
-  }
-
-  if(incr != 0 && table[incr - 1].length == 4){
-    table[incr - 1].splice(0, 0, "");
+    table.push(lst);
   }
 
   for(var t = 0; t < table.length; t++){
@@ -40,7 +38,8 @@ var insert_team = (data) => {
   }
 }
 
-fetch("https://spreadsheets.google.com/feeds/cells/1YYkl0rNSd16m3lQvn90fUYD9P_uEz5UsP8XucxDsvl8/1/public/values?alt=json")
+fetch("https://docs.google.com/spreadsheets/d/1YYkl0rNSd16m3lQvn90fUYD9P_uEz5UsP8XucxDsvl8/gviz/tq?tqx=out:json&sheet=Team")
+  .then(response => strip(response))
   .then(response => response.json())
-  .then(data => data["feed"]["entry"])
+  .then(data => data["table"]["rows"])
   .then(data => insert_team(data));
