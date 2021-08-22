@@ -1,3 +1,10 @@
+var strip = (resp) => {
+  var qrystr = "Query.setResponse(";
+  var start = resp.indexOf(qrystr) + qrystr.length;
+
+  return resp.substring(start, resp.length - 2);
+}
+
 var insert_stories = (data) => {
 
   var debug = false;
@@ -11,9 +18,9 @@ var insert_stories = (data) => {
   </div>`;
  
   var col_names = ['desc','name','link']
-  var num_cols = 3;
-  var num_rows = data['length']/num_cols;
 
+  var num_rows = data.length;
+  const num_cols = 3;
   
   for(var row = 0; row < num_rows; row++){
 
@@ -21,10 +28,12 @@ var insert_stories = (data) => {
 
     story = story.replace("__IMG__","./assets/story_photos/"+(num_rows-row)+".jpeg")
 
+    var row_content = data[row]['c'];
+
     for(var col = 0; col < num_cols; col++){
 
       var eltnum = col+(row*num_cols);
-      story = story.replace("__"+col_names[col].toUpperCase()+"__",data[eltnum]['content']['$t'])
+      story = story.replace("__"+col_names[col].toUpperCase()+"__", row_content[col]['v'])
       
       if (debug){
         console.log(col);
@@ -41,7 +50,8 @@ var insert_stories = (data) => {
   }
 }
 
-fetch("https://spreadsheets.google.com/feeds/cells/1JedpBrpWUCPTraKcJOvqq2R-luH21PpgBETIxBhp-HU/1/public/values?alt=json")
-  .then(response => response.json())
-  .then(data => data["feed"]["entry"])
+fetch("https://docs.google.com/spreadsheets/d/1JedpBrpWUCPTraKcJOvqq2R-luH21PpgBETIxBhp-HU/gviz/tq?tqx=out:json&sheet=Sheet1")
+  .then(response => response.text())
+  .then(response => JSON.parse(strip(response)))
+  .then(data => data["table"]["rows"])
   .then(data => insert_stories(data));
