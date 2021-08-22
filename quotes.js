@@ -20,7 +20,7 @@ var insert_quotes = (data) => {
   }
 }
 
-fetch("https://docs.google.com/spreadsheets/d/1G1O8-CIhHx_JBrHfHpeEldaMWUTmQ2YjvFAhXrrv_Yc/gviz/tq?tqx=out:json&sheet=Team")
+fetch("https://docs.google.com/spreadsheets/d/1G1O8-CIhHx_JBrHfHpeEldaMWUTmQ2YjvFAhXrrv_Yc/gviz/tq?tqx=out:json&sheet=Sheet1")
   .then(response => response.text())
   .then(response => JSON.parse(strip(response)))
   .then(data => data["table"]["rows"])
