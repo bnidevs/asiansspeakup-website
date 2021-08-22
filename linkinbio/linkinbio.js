@@ -13,7 +13,7 @@ var insert_linkinbio = (data) => {
 
     var content = row["c"];
     
-    feed.innerHTML += '<a href="' + content[1]['v'] + '"><button class="button linkinbio">' + content[0]['v'] + '</button></a>';
+    feed.innerHTML += '<a href="' + content[0]['v'] + '"><button class="button linkinbio">' + content[1]['v'] + '</button></a>';
   }
 }
 
