@@ -39,6 +39,7 @@ var insert_team = (data) => {
 }
 
 fetch("https://docs.google.com/spreadsheets/d/1YYkl0rNSd16m3lQvn90fUYD9P_uEz5UsP8XucxDsvl8/gviz/tq?tqx=out:json&sheet=Team")
-  .then(response => strip(response.text()).json())
+  .then(response => response.text())
+  .then(response => strip(response).json())
   .then(data => data["table"]["rows"])
   .then(data => insert_team(data));
